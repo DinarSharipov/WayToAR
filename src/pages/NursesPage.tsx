@@ -112,10 +112,6 @@ const NursesPage: FC = memo(() => {
                   value: nurse.department
                 }}
               />
-              <div className="flex gap-2 items-center justify-between">
-                <label htmlFor="manager">Заведующий</label>
-                <input id="manager" type="checkbox" className="mt-0.5" />
-              </div>
             </div>
             <div className="flex gap-4 justify-end">
               <button className="cursor-pointer bg-blue-200 p-2 rounded-md" onClick={saveHandler}>{nurse.id ? 'Сохранить' : 'Создать'}</button>
